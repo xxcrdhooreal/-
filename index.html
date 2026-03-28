@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streamer - KENN</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Layer 1: Latar Belakang Video Spiderman -->
+    <div class="video-container">
+        <!-- Menggunakan 'muted' agar autoplay berfungsi di semua browser, termasuk mobile -->
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="video.mp4" type="video/mp4">
+            Browser Anda tidak mendukung tag video.
+        </video>
+    </div>
+
+    <!-- Layer 2: Overlay Gelap untuk mengurangi kontras -->
+    <div class="dark-overlay"></div>
+
+    <!-- UI Interaktif -->
+    <main class="ui-container">
+        <div class="glass-panel">
+            <div class="profile-header">
+                <h1>KENN</h1>
+                <p>WELCOME TO KENN HUB</p>
+            </div>
+
+            <div class="button-group">
+                <a href="https://sociabuzz.com/ken77/tribe" class="btn btn-primary" id="btn-donate">
+                    <span class="btn-text">Donate</span>
+                    <span class="btn-icon">🕸️</span>
+                </a>
+
+                <a href="https://discord.gg/rHGHPjpaus" class="btn btn-discord" id="btn-discord">
+                    <span class="btn-text">Join Discord</span>
+                    <span class="btn-icon">🎮</span>
+                </a>
+
+                <a href="https://whatsapp.com/channel/0029VbC0mjTFsn0cvaTcrZ1D" class="btn btn-info"
+                    id="btn-tournament">
+                    <span class="btn-text">Turnamen FF 24/7</span>
+                    <span class="btn-icon">🔥</span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Watermark -->
+    <div class="watermark">
+        &copy; <span id="current-year"></span> xxcrdhoo
+    </div>
+
+    <!-- Custom Alert Modal -->
+    <div id="custom-alert" class="custom-alert-box hidden">
+        <div class="alert-content">
+            <span class="alert-icon">⚠️</span>
+            <h3>Akses Ditolak</h3>
+            <p>Jika berminat source code bisa hubungi tiktok <strong>xxcrdhoo</strong></p>
+            <button id="close-alert" class="btn-close-alert">Mengerti</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
